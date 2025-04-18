@@ -1,0 +1,118 @@
+#game-wrapper {
+    /* Game full wrapper, initially hidden */
+    font-family: "Inter", sans-serif; /* Font */
+    background-color: #d3d3d3; /* Background color */
+    min-height: 100vh; /* Full height equivalent to the screen height */
+    width: 100%; /* Width 100% */
+    display: none; /* Initially hidden */
+}
+
+.game-container {
+    /* Game container */
+    padding: 30px; /* Inner spacing */
+    border-radius: 12px; /* Rounded corners */
+    text-align: center; /* Center text alignment */
+    max-width: 600px; /* Maximum width */
+    margin: auto; /* Auto margin to center */
+}
+
+.game-container > h1 {
+    /* Game title style */
+    font-size: 30px; /* Font size */
+    font-weight: 700; /* Bold font */
+    color: rgba(7, 10, 82, 1); /* Text color */
+}
+
+.game-container > p {
+    /* Instructions or game text */
+    font-size: 20px; /* Font size */
+    font-weight: 700; /* Bold font */
+    margin-top: 75px; /* Top margin */
+    margin-bottom: 30px; /* Bottom margin */
+}
+
+.feedback {
+    /* Feedback for user guesses */
+    font-size: 40px; /* Font size */
+    font-weight: 700; /* Bold font */
+    margin: 30px 0; /* Margin top and bottom */
+}
+
+input#guess-input {
+    /* Game input field */
+    padding: 15px; /* Inner spacing */
+    width: 300px; /* Width */
+    border-radius: 10px; /* Rounded corners */
+    border: 1px solid rgba(212, 212, 212, 1); /* Light gray border */
+}
+
+.input-error {
+    /* Error message style */
+    color: rgba(255, 0, 0, 1); /* Red color */
+    font-size: 19px; /* Font size */
+    font-weight: 500; /* Semi-bold font */
+    margin: 25px 0; /* Margin top and bottom */
+}
+
+.buttons {
+    /* Button layout */
+    display: flex; /* Flexbox */
+    justify-content: center; /* Centered */
+    gap: 40px; /* Space between buttons */
+}
+
+button#guess-btn,
+button#restart-btn {
+    /* Guess and restart button style */
+    width: 170px; /* Width */
+    height: 60px; /* Height */
+    background-color: rgba(223, 46, 56, 1); /* Background color */
+    border: none; /* No border */
+    border-radius: 14px; /* Rounded corners */
+    cursor: pointer; /* Cursor style */
+    color: white; /* White text */
+    font-weight: 700; /* Bold font */
+    font-size: 25px; /* Font size */
+}
+
+.side-info {
+    /* Side panel for extra information */
+    position: absolute; /* Absolute positioning */
+    top: 20%; /* Top spacing */
+    right: 10%; /* Right spacing */
+}
+
+.side-info > p {
+    /* Text inside the side panel */
+    font-size: 30px; /* Font size */
+    font-weight: 500; /* Semi-bold font */
+    text-align: left; /* Left-aligned text */
+    margin: auto; /* Auto margin */
+}
+
+.history {
+    /* History section style */
+    margin-top: 30px; /* Top margin */
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Column layout */
+    align-items: center; /* Centered */
+}
+
+.history h2 {
+    /* History title */
+    color: green; /* Green color */
+    font-size: 39px; /* Font size */
+    font-weight: 600; /* Semi-bold font */
+}
+
+#history-list li {
+    /* Each history item */
+    margin: 5px 0; /* Spacing */
+    font-weight: 600; /* Bold font */
+    font-size: 24px; /* Font size */
+}
+
+#history-list span {
+    /* Highlighted part of history (e.g. numbers) */
+    color: rgba(0, 94, 255, 1); /* Blue color */
+}

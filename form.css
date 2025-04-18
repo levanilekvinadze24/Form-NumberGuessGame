@@ -1,0 +1,134 @@
+/* === Wrapper element around the form === */
+#form-wrapper {
+    min-height: 100vh; /* Full viewport height */
+    width: 100%; /* Full width */
+    background-color: #FBF8F6; /* Light background color */
+
+    display: flex; /* Use Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+/* === Main box that contains the form === */
+.form-box {
+    min-width: 517px; /* Minimum width */
+}
+
+/* === Heading inside form-wrapper (if used) === */
+#form-wrapper > h1 {
+    font-weight: 400; /* Light font weight */
+    margin-bottom: 2em; /* Bottom margin */
+}
+
+/* === Overall form layout === */
+form {
+    display: flex; /* Use Flexbox */
+    flex-direction: column; /* Stack elements vertically */
+    gap: 20px; /* Space between fields */
+}
+
+/* === Layout for each input row === */
+.row {
+    display: flex;
+    flex-direction: column; /* Label and input stacked */
+}
+
+/* === Label styles === */
+.row label {
+    font-weight: 500; /* Slightly bold */
+    font-size: 13px; /* Small text */
+    margin-bottom: 10px; /* Space before input */
+}
+
+/* === Styles for input fields (text, email, password, select) === */
+.row input[type="text"],
+.row input[type="email"],
+.row input[type="password"],
+.row select {
+    padding: 14px; /* Inner spacing */
+    font-size: 14px; /* Text size */
+    border-radius: 10px; /* Rounded corners */
+    border: 1px solid #D4D4D4; /* Light gray border */
+    width: 100%; /* Full width */
+    margin-bottom: 10px; /* Bottom spacing */
+}
+
+/* === Double input fields (e.g., first & last name side by side) === */
+.double-input {
+    flex-direction: row; /* Arrange side by side */
+    justify-content: space-between; /* Space between items */
+}
+
+/* === Each input container in the double-input block === */
+.double-input > div {
+    width: 230px; /* Fixed width */
+}
+
+/* === Label style inside double input === */
+.double-input label {
+    display: inline-block; /* Keep label on the same line */
+}
+
+/* === Style for select dropdown === */
+select {
+    background-color: white; /* White background */
+    width: 230px !important; /* Fixed width */
+}
+
+/* === Container for checkbox elements === */
+.checkbox-container {
+    display: flex;
+    gap: 145px; /* Large space between columns */
+}
+
+/* === Column for each group of checkboxes === */
+.checkbox-col {
+    display: flex;
+    flex-direction: column; /* Stack checkboxes vertically */
+}
+
+/* === Label style for checkboxes === */
+.checkbox-col label {
+    font-size: 13px;
+    display: flex; /* Align icon and text in one line */
+    align-items: center; /* Vertically center */
+}
+
+/* === Size for checkbox inputs === */
+.checkbox-col input[type="checkbox"] {
+    width: 14px;
+    height: 14px;
+}
+
+/* === Submit button style === */
+#submit-btn {
+    background-color: black; /* Black background */
+    color: white; /* White text */
+    margin-top: 50px; /* Top spacing */
+    padding: 15px; /* Inner spacing */
+    border: none; /* No border */
+    font-size: 13px;
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+}
+
+/* === Error message style (added via JS) === */
+.error {
+    display: block; /* Display as block */
+    color: #CC777B; /* Dark pink text */
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+/* === Input style when there's an error === */
+.error-input {
+    border: 1.5px solid rgba(234, 204, 201, 1) !important; /* Colored border */
+    box-shadow: 2px 2px 5.1px 0px rgba(235, 205, 202, 1); /* Shadow around input */
+}
+
+/* === Icon size for error (if used) === */
+.error-icon {
+    width: 14px;
+    height: 14px;
+    margin-right: 5px; /* Space between icon and text */
+}
